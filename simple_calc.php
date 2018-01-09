@@ -32,36 +32,11 @@
 <script type="text/javascript">
     function setValue(num) {
 		
-           var dummyEl = document.getElementById('myID');
-        document.getElementById('val').value=dummyEl;
+           
+        document.getElementById('val').value=num;
     }
 </script>
-<?php
-$ans='';
-if($_SERVER['REQUEST_METHOD']=="POST")
-{
-$first=$_REQUEST['fn'];
-$second=$_REQUEST['sn'];
-$sub=$_REQUEST['submit'];
-if($sub=="+")
-{
-$GLOBALS['ans']=$GLOBALS['first']+$GLOBALS['second'];
-}	
-if($sub=="-")
-{
-$GLOBALS['ans']=$GLOBALS['first']-$GLOBALS['second'];
-}
-if($sub=="*")
-{
-$GLOBALS['ans']=$GLOBALS['first']*$GLOBALS['second'];
-}
-if($sub=="/")
-{
-$GLOBALS['ans']=$GLOBALS['first']/$GLOBALS['second'];
-}
-}
-echo "Result:".$ans;
-?>
+
 <br>
 <br>
 <h4 style="background-color:LightGray; text-align:center">Muhammad Umer &copy;</h4>
