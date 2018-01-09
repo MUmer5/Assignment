@@ -19,15 +19,15 @@ if($sub=="+")
 {
 $GLOBALS['ans']=$GLOBALS['first']+$GLOBALS['second'];
 }	
-if($sub=="-")
+else if($sub=="-")
 {
 $GLOBALS['ans']=$GLOBALS['first']-$GLOBALS['second'];
 }
-if($sub=="*")
+else if($sub=="*")
 {
 $GLOBALS['ans']=$GLOBALS['first']*$GLOBALS['second'];
 }
-if($sub=="/")
+else if($sub=="/")
 {
 $GLOBALS['ans']=$GLOBALS['first']/$GLOBALS['second'];
 }
